@@ -1,0 +1,61 @@
+.background-link {
+    background-color: #ddf7ff;
+}
+
+.input-link {
+    border-color: #45639b;
+    margin-top: -560px; /* Center the input-link */
+    border-width: 4px;
+    height: 560px;
+    background-color: #8ae2ff;
+}
+
+.details-link {
+    text-align: center; /* Center-align text */
+    margin: 20px; /* Add some top margin for spacing */
+    color: #94786b;
+}
+
+.flightname-link{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Bookman Old Style";
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.destination-link{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Bookman Old Style";
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.price-link{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Bookman Old Style";
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.date-link{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Bookman Old Style";
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Adjust the position of the SUBMIT button */
+#SUBMIT {
+    margin-top: 10px; /* Add some top margin for spacing */
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Bookman Old Style";
+    color: #ebeff1;
+    background-color: #94786b;
+}

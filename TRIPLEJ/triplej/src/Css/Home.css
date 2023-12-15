@@ -1,0 +1,81 @@
+/* Hover effect with darker sides */
+.book-now-link {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px; /* Adjust as needed */
+  margin-bottom: -7px;
+  text-decoration: none;
+  color: #1E40AF; /* Adjust the color to your preference */
+  z-index: 1; /* Set a higher z-index to keep the text on top */
+  overflow: hidden; /* Hide overflow to prevent horizontal scrollbars */
+}
+
+.book-now-link::before,
+.book-now-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+  z-index: -1; /* Set a lower z-index for the "covers" */
+}
+
+.book-now-link::before {
+  left: 0;
+  background: linear-gradient(to left, #35c4ca, rgba(177, 240, 255, 0.5)); /* Adjust colors as needed */
+}
+
+.book-now-link::after {
+  right: 0;
+  background: linear-gradient(to right, #35c4ca, rgba(177, 240, 255, 0.5)); /* Adjust colors as needed */
+}
+
+.book-now-link:hover::before,
+.book-now-link:hover::after {
+  width: 100%;
+}
+
+.book-now-link:hover {
+  color: #fff; /* Set the text color to white when hovered */
+}
+
+
+/* Open book design */
+.book-now-link2 {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px; /* Adjust as needed */
+  text-decoration: none;
+  border: none;
+  color: #7B66FF; /* Adjust the default text color to your preference */
+  z-index: 1; /* Set a higher z-index to keep the text on top */
+}
+
+.book-now-link2::before,
+.book-now-link2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  border: transparent;
+  height: 100%;
+  background-color: #51deff; /* Adjust the color to your preference */
+  transition: width 0.3s ease-out;
+  z-index: -1; /* Set a lower z-index for the "covers" */
+}
+
+.book-now-link2::before {
+  left: 0;
+}
+
+.book-now-link2::after {
+  right: 0;
+}
+
+.book-now-link2:hover,
+.book-now-link2:hover::before,
+.book-now-link2:hover::after {
+  color: #fff; /* Set the text color to white when hovered */
+  width: 100%;
+}
